@@ -4,7 +4,6 @@ const sender = document.getElementById("sender")
 const message = document.getElementById("message")
 const submitBtn = document.getElementById("submitBtn")
 const output = document.getElementById("output")
-const feedback = document.getElementById("feedback")
 
 submitBtn.addEventListener("click", () => {
     socket.emit('chat', {
