@@ -9,13 +9,6 @@ app.use(express.static("public"))
 
 const io = socket(server)
 
-// app.use(bparser.urlencoded({ extended: false }))
-// app.use(bparser.json())
-
-// app.set('view engine', 'ejs');
-// app.set('views', "public")
-
-
 io.on("connection", socket => {
     console.log(socket.id)
 
